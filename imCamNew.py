@@ -179,8 +179,8 @@ def imageShoot():
 
     if toWidth < width / 2:
         xFromCenter = (width / 2) - ((contour[newHighSpot][0][0] + contour[newLowSpot][0][0]) / 2)
-    elif toWidth > height / 2:
-        xFromCenter = ((contour[newHighSpot][0][0] + contour[newLowSpot][0][0]) / 2) - (width / 2)
+    elif toWidth > width / 2:
+        xFromCenter = (((contour[newHighSpot][0][0] + contour[newLowSpot][0][0]) / 2) - (width / 2)) * -1
     else:
         xFromCenter = 0
 
